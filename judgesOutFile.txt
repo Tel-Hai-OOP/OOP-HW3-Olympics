@@ -1,0 +1,131 @@
+Judge Jeremy born 1991-08-12 from Thailand for Uneven Bars
+Judge Itasca born 1980-04-12 from China for Uneven Bars
+Judge Holly born 1991-08-12 from Belarus for Uneven Bars
+Judge Georgie born 1990-06-07 from Monaco for Uneven Bars
+Judge Fran born 2008-05-30 from Malta for Uneven Bars
+Judge Euler born 2000-10-20 from Vietnam for Uneven Bars
+Judge Dovie born 2001-02-01 from Thailand for Uneven Bars
+Judge Cid born 2000-01-01 from Ukraine for Uneven Bars
+Judge Barney born 1992-01-05 from Turkey for Uneven Bars
+Judge Archie born 1992-01-05 from Jordan for Uneven Bars
+Judge Zulu born 1991-06-05 from Egypt for Uneven Bars
+Judge Yola born 1990-05-05 from Monaco for Balance Beam
+Judge Xanadar born 1992-01-05 from Malta for Balance Beam
+Judge Wally born 1991-06-05 from Vietnam for Balance Beam
+Judge Vance born 1990-05-05 from Thailand for Balance Beam
+Judge Ulrich born 1991-02-03 from China for Balance Beam
+Judge Turnip born 1997-10-10 from Belarus for Balance Beam
+Judge Silly born 1980-04-12 from Monaco for Balance Beam
+Judge Rancid born 1998-05-10 from Italy for Balance Beam
+Judge Quatrain born 1997-10-10 from Korea for Balance Beam
+Judge Pohorelice born 1980-04-12 from Holland for Balance Beam
+Judge Oldman born 1991-08-12 from Italy for Balance Beam
+Judge Nuance born 1990-06-07 from Haiti for Vault
+Judge Mandibles born 2008-05-30 from Morocco for Vault
+Judge Lumper born 2007-03-27 from Libya for Vault
+Judge Koolaid born 2006-01-01 from Turkey for Vault
+Judge Junker born 2001-10-25 from Jordan for Vault
+Judge Itasca born 2002-11-15 from Egypt for Vault
+Judge Hoover born 1997-10-10 from Monaco for Vault
+Judge Gevalt born 1998-05-10 from Malta for Vault
+Judge Faulty born 2000-10-20 from Cuba for Vault
+Judge Exonre born 2006-01-01 from Panama for Vault
+Judge Duerte born 2001-10-25 from Argentina for Vault
+Judge Cid born 2002-11-15 from Mexico for Rings
+Judge Barney born 1997-10-10 from Canada for Rings
+Judge Archie born 1998-05-10 from Israel for Rings
+Judge Zulu born 2000-10-20 from Japan for Rings
+Judge Yi born 2001-02-01 from Greece for Rings
+Judge Xinda born 2000-01-01 from Macedonia for Rings
+Judge Wally born 1992-01-05 from Mexico for Rings
+Judge Victor born 1991-06-05 from Libya for Rings
+Judge Ulrich born 1991-02-03 from Turkey for Rings
+Judge Thule born 1997-10-10 from Jordan for Rings
+Judge Samson born 1980-04-12 from Egypt for Rings
+Judge Richard born 1991-08-12 from Monaco for Pommel Horse
+Judge Quality born 1990-06-07 from Malta for Pommel Horse
+Judge Prince born 2008-05-30 from Vietnam for Pommel Horse
+Judge Orchard born 2007-03-27 from Thailand for Pommel Horse
+Judge Neo born 2006-01-01 from China for Pommel Horse
+Judge Michael born 2001-10-25 from Belarus for Pommel Horse
+Judge Leo born 2002-11-15 from Monaco for Pommel Horse
+Judge Kally born 1997-10-10 from Malta for Pommel Horse
+Judge Janice born 1998-05-10 from Vietnam for Pommel Horse
+Judge Ichabod born 2000-10-20 from Thailand for Pommel Horse
+Judge Holly born 2001-02-01 from Ukraine for Pommel Horse
+Judge Gertrude born 2000-01-01 from Uruguay for Parallel Bars
+Judge Francisco born 1992-01-05 from Russia for Parallel Bars
+Judge Eduardo born 1991-06-05 from Germany for Parallel Bars
+Judge Donald born 1990-05-05 from Italy for Parallel Bars
+Judge Claire born 1992-01-05 from Korea for Parallel Bars
+Judge Barney born 1991-06-05 from Holland for Parallel Bars
+Judge Albert born 1990-05-05 from Italy for Parallel Bars
+Judge Zvi born 1991-02-03 from Haiti for Parallel Bars
+Judge Yente born 1997-10-10 from Morocco for Parallel Bars
+Judge Xylium born 1991-02-03 from Libya for Parallel Bars
+Judge Vance born 2002-05-01 from Turkey for Parallel Bars
+Judge Upton born 2000-01-01 from Jordan for Horizontal Bar
+Judge Tina born 1992-01-05 from Egypt for Horizontal Bar
+Judge Siliva born 2000-01-01 from Monaco for Horizontal Bar
+Judge Roger born 1992-01-05 from Malta for Horizontal Bar
+Judge Quentin born 1980-04-12 from Vietnam for Horizontal Bar
+Judge Paul born 1980-04-12 from Thailand for Horizontal Bar
+Judge Otto born 1997-10-10 from China for Horizontal Bar
+Judge Nancy born 1993-04-04 from Belarus for Horizontal Bar
+Judge Manfred born 1993-04-04 from Ukraine for Horizontal Bar
+Judge Laura born 1992-04-05 from Russia for Horizontal Bar
+Judge Karl born 1991-05-06 from Germany for Horizontal Bar
+Judge Jan born 2000-01-03 from Italy for Floor Exercise
+Judge Inria born 1998-05-10 from Korea for Floor Exercise
+Judge Hal born 1997-10-10 from Holland for Floor Exercise
+Judge Ginny born 1998-05-10 from Italy for Floor Exercise
+Judge Fred born 2000-10-20 from Haiti for Floor Exercise
+Judge Ed born 2001-02-01 from Cuba for Floor Exercise
+Judge Dan born 2000-01-01 from Panama for Floor Exercise
+Judge Cindy born 1992-01-05 from Argentina for Floor Exercise
+Judge Bob born 1991-06-05 from Mexico for Floor Exercise
+Judge Alice born 1990-05-05 from Canada for Floor Exercise
+Judge Zeidi born 1992-01-05 from Paraguay for Floor Exercise
+Judge Yente born 1991-06-05 from France for All Around
+Judge Xylium born 1990-05-05 from Finland for All Around
+Judge Vance born 1991-02-03 from Panama for All Around
+Judge Upton born 1997-10-10 from Israel for All Around
+Judge Nonny born 1980-04-12 from Mexico for All Around
+Judge Manny born 1998-05-10 from USA for All Around
+Judge Lombard born 2000-05-04 from United Arab Emirates for All Around
+Judge Kurt born 2002-06-02 from Switzerland for All Around
+Judge Janice born 2002-05-01 from Japan for All Around
+Judge Infiny born 2001-04-10 from Israel for All Around
+Judge Hank born 2000-01-03 from Italy for All Around
+Judge Georgie born 1998-05-10 from Korea for Jumping
+Judge Fran born 1997-10-10 from Holland for Jumping
+Judge Euler born 1998-05-10 from Italy for Jumping
+Judge Dovie born 2000-10-20 from Haiti for Jumping
+Judge Chris born 2001-02-01 from Cuba for Jumping
+Judge Benny born 2000-01-01 from Panama for Jumping
+Judge Aba born 1992-01-05 from Argentina for Jumping
+Judge Zany born 1991-06-05 from Mexico for Jumping
+Judge Yola born 1990-05-05 from Canada for Jumping
+Judge Xanadar born 1991-02-03 from Israel for Jumping
+Judge Vince born 1997-10-10 from Japan for Jumping
+Judge Ursula born 1980-04-12 from Greece for Eventing
+Judge Tina born 1991-08-12 from Macedonia for Eventing
+Judge Siliva born 1990-06-07 from Mexico for Eventing
+Judge Roger born 2008-05-30 from USA for Eventing
+Judge Quentin born 2007-03-27 from United Arab Emirates for Eventing
+Judge Paul born 2006-01-01 from Switzerland for Eventing
+Judge Otto born 2001-10-25 from Japan for Eventing
+Judge Nancy born 2002-11-15 from Israel for Eventing
+Judge Manfred born 2001-12-12 from Italy for Eventing
+Judge Laura born 1997-10-10 from Holland for Eventing
+Judge Karl born 1998-05-10 from Germany for Eventing
+Judge Jan born 2000-10-20 from USA for Dressage
+Judge Inria born 1999-04-11 from France for Dressage
+Judge Hal born 1998-03-23 from Finland for Dressage
+Judge Ginny born 1997-10-10 from France for Dressage
+Judge Fred born 1998-05-10 from USA for Dressage
+Judge Ed born 2000-05-04 from Israel for Dressage
+Judge Dan born 2002-06-02 from Italy for Dressage
+Judge Cindy born 2002-05-01 from Israel for Dressage
+Judge Bob born 2001-04-10 from USA for Dressage
+Judge Alice born 2000-01-03 from USA for Dressage

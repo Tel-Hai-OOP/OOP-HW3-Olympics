@@ -1,0 +1,25 @@
+﻿24
+Dressage;FINAL;2024-04-05;Alice,Bob,Cindy,Dan,Ed
+Dressage;QUARTER_FINAL;2024-04-06;Bob,Cindy,Dan,Hal,Inria
+Dressage;SEMI_FINAL;2024-04-07;Hal,Inria,Jan,Dan,Ed
+All Around;QUALIFIER;2024-04-08;Infiny,Janice,Kurt,Lombard,Manny,Nonny,Yente
+Floor Exercise;FINAL;2024-04-09;Zeidi,Alice,Bob,Cindy,Dan,Hal,Inria
+Horizontal Bar;QUARTER_FINAL;2024-04-10;Karl,Laura,Paul,Quentin,Roger,Siliva,Tina
+Parallel Bars;QUARTER_FINAL;2024-04-05;Vance,Xylium,Yente,Zvi,Albert,Barney,Claire
+Pommel Horse;FINAL;2024-04-06;Holly,Ichabod,Janice,Kally,Leo,Neo,Richard
+Rings;QUARTER_FINAL;2024-04-07;Samson,Thule,Ulrich,Victor,Wally,Xinda,Yi
+Vault;FINAL;2024-04-08;Hoover,Itasca,Junker,Koolaid,Lumper,Mandibles,Nuance
+Balance Beam;SEMI_FINAL;2024-04-09;Rancid,Silly,Turnip,Ulrich,Vance,Wally,Xanadar
+Uneven Bars;FINAL;2024-04-10;Zulu,Archie,Barney,Cid,Dovie,Euler,Fran
+Dressage;QUARTER_FINAL;2024-04-06;Alice,Cindy,Dan,Ginny,Hal
+Eventing;FINAL;2024-04-07;Laura,Manfred,Nancy,Otto,Paul
+Jumping;QUALIFIER;2024-04-08;Chris,Dovie,Euler,Fran,Georgie
+All Around;QUARTER_FINAL;2024-04-09;Hank,Janice,Kurt,Upton,Vance,Xylium,Yente
+Floor Exercise;SEMI_FINAL;2024-04-07;Dan,Ed,Fred,Ginny,Hal,Inria,Jan
+Horizontal Bar;FINAL;2024-04-08;Laura,Nancy,Otto,Paul,Quentin,Roger,Siliva
+Parallel Bars;QUARTER_FINAL;2024-04-09;Xylium,Yente,Zvi,Albert,Barney,Eduardo,Francisco
+Pommel Horse;SEMI_FINAL;2024-04-10;Holly,Ichabod,Janice,Kally,Leo,Neo,Richard
+Rings;QUARTER_FINAL;2024-04-10;Victor,Wally,Xinda,Yi,Zulu,Archie,Barney
+Vault;SEMI_FINAL;2024-04-05;Duerte,Exonre,Faulty,Gevalt,Koolaid,Mandibles,Nuance
+Balance Beam;SEMI_FINAL;2024-04-06;Oldman,Pohorelice,Quatrain,Silly,Turnip,Wally,Yola
+Uneven Bars;QUALIFIER;2024-04-07;Archie,Euler,Fran,Georgie,Holly,Itasca,Jeremy

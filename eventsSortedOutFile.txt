@@ -1,0 +1,12 @@
+Event All Around with 7 judges for ANY athletes
+Event Balance Beam with 7 judges for FEMALE athletes
+Event Dressage with 5 judges for ANY athletes
+Event Eventing with 5 judges for ANY athletes
+Event Floor Exercise with 7 judges for ANY athletes
+Event Horizontal Bar with 7 judges for MALE athletes
+Event Jumping with 5 judges for ANY athletes
+Event Parallel Bars with 7 judges for MALE athletes
+Event Pommel Horse with 7 judges for MALE athletes
+Event Rings with 7 judges for MALE athletes
+Event Uneven Bars with 7 judges for FEMALE athletes
+Event Vault with 7 judges for MALE athletes

@@ -1,0 +1,13 @@
+12
+E;Dressage;5;ANY
+E;Eventing;5;ANY
+E;Jumping;5;ANY
+G;All Around;7;ANY
+G;Floor Exercise;7;ANY
+G;Horizontal Bar;7;MALE
+G;Parallel Bars;7;MALE
+G;Pommel Horse;7;MALE
+G;Rings;7;MALE
+G;Vault;7;MALE
+G;Balance Beam;7;FEMALE
+G;Uneven Bars;7;FEMALE

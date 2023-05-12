@@ -1,0 +1,132 @@
+﻿131
+Alice;USA;Dressage;2000-01-03
+Bob;USA;Dressage;2001-04-10
+Cindy;Israel;Dressage;2002-05-01
+Dan;Italy;Dressage;2002-06-02
+Ed;Israel;Dressage;2000-05-04
+Fred;USA;Dressage;1998-05-10
+Ginny;France;Dressage;1997-10-10
+Hal;Finland;Dressage;1998-03-23
+Inria;France;Dressage;1999-04-11
+Jan;USA;Dressage;2000-10-20
+Karl;Germany;Eventing;1998-05-10
+Laura;Holland;Eventing;1997-10-10
+Manfred;Italy;Eventing;2001-12-12
+Nancy;Israel;Eventing;2002-11-15
+Otto;Japan;Eventing;2001-10-25
+Paul;Switzerland;Eventing;2006-01-01
+Quentin;United Arab Emirates;Eventing;2007-03-27
+Roger;USA;Eventing;2008-05-30
+Siliva;Mexico;Eventing;1990-06-07
+Tina;Macedonia;Eventing;1991-08-12
+Ursula;Greece;Eventing;1980-04-12
+Vince;Japan;Jumping;1997-10-10
+Xanadar;Israel;Jumping;1991-02-03
+Yola;Canada;Jumping;1990-05-05
+Zany;Mexico;Jumping;1991-06-05
+Aba;Argentina;Jumping;1992-01-05
+Benny;Panama;Jumping;2000-01-01
+Chris;Cuba;Jumping;2001-02-01
+Dovie;Haiti;Jumping;2000-10-20
+Euler;Italy;Jumping;1998-05-10
+Fran;Holland;Jumping;1997-10-10
+Georgie;Korea;Jumping;1998-05-10
+Hank;Italy;All Around;2000-01-03
+Infiny;Israel;All Around;2001-04-10
+Janice;Japan;All Around;2002-05-01
+Kurt;Switzerland;All Around;2002-06-02
+Lombard;United Arab Emirates;All Around;2000-05-04
+Manny;USA;All Around;1998-05-10
+Nonny;Mexico;All Around;1980-04-12
+Upton;Israel;All Around;1997-10-10
+Vance;Panama;All Around;1991-02-03
+Xylium;Finland;All Around;1990-05-05
+Yente;France;All Around;1991-06-05
+Zeidi;Paraguay;Floor Exercise;1992-01-05
+Alice;Canada;Floor Exercise;1990-05-05
+Bob;Mexico;Floor Exercise;1991-06-05
+Cindy;Argentina;Floor Exercise;1992-01-05
+Dan;Panama;Floor Exercise;2000-01-01
+Ed;Cuba;Floor Exercise;2001-02-01
+Fred;Haiti;Floor Exercise;2000-10-20
+Ginny;Italy;Floor Exercise;1998-05-10
+Hal;Holland;Floor Exercise;1997-10-10
+Inria;Korea;Floor Exercise;1998-05-10
+Jan;Italy;Floor Exercise;2000-01-03
+Karl;Germany;Horizontal Bar;1991-05-06
+Laura;Russia;Horizontal Bar;1992-04-05
+Manfred;Ukraine;Horizontal Bar;1993-04-04
+Nancy;Belarus;Horizontal Bar;1993-04-04
+Otto;China;Horizontal Bar;1997-10-10
+Paul;Thailand;Horizontal Bar;1980-04-12
+Quentin;Vietnam;Horizontal Bar;1980-04-12
+Roger;Malta;Horizontal Bar;1992-01-05
+Siliva;Monaco;Horizontal Bar;2000-01-01
+Tina;Egypt;Horizontal Bar;1992-01-05
+Upton;Jordan;Horizontal Bar;2000-01-01
+Vance;Turkey;Parallel Bars;2002-05-01
+Xylium;Libya;Parallel Bars;1991-02-03
+Yente;Morocco;Parallel Bars;1997-10-10
+Zvi;Haiti;Parallel Bars;1991-02-03
+Albert;Italy;Parallel Bars;1990-05-05
+Barney;Holland;Parallel Bars;1991-06-05
+Claire;Korea;Parallel Bars;1992-01-05
+Donald;Italy;Parallel Bars;1990-05-05
+Eduardo;Germany;Parallel Bars;1991-06-05
+Francisco;Russia;Parallel Bars;1992-01-05
+Gertrude;Uruguay;Parallel Bars;2000-01-01
+Holly;Ukraine;Pommel Horse;2001-02-01
+Ichabod;Thailand;Pommel Horse;2000-10-20
+Janice;Vietnam;Pommel Horse;1998-05-10
+Kally;Malta;Pommel Horse;1997-10-10
+Leo;Monaco;Pommel Horse;2002-11-15
+Michael;Belarus;Pommel Horse;2001-10-25
+Neo;China;Pommel Horse;2006-01-01
+Orchard;Thailand;Pommel Horse;2007-03-27
+Prince;Vietnam;Pommel Horse;2008-05-30
+Quality;Malta;Pommel Horse;1990-06-07
+Richard;Monaco;Pommel Horse;1991-08-12
+Samson;Egypt;Rings;1980-04-12
+Thule;Jordan;Rings;1997-10-10
+Ulrich;Turkey;Rings;1991-02-03
+Victor;Libya;Rings;1991-06-05
+Wally;Mexico;Rings;1992-01-05
+Xinda;Macedonia;Rings;2000-01-01
+Yi;Greece;Rings;2001-02-01
+Zulu;Japan;Rings;2000-10-20
+Archie;Israel;Rings;1998-05-10
+Barney;Canada;Rings;1997-10-10
+Cid;Mexico;Rings;2002-11-15
+Duerte;Argentina;Vault;2001-10-25
+Exonre;Panama;Vault;2006-01-01
+Faulty;Cuba;Vault;2000-10-20
+Gevalt;Malta;Vault;1998-05-10
+Hoover;Monaco;Vault;1997-10-10
+Itasca;Egypt;Vault;2002-11-15
+Junker;Jordan;Vault;2001-10-25
+Koolaid;Turkey;Vault;2006-01-01
+Lumper;Libya;Vault;2007-03-27
+Mandibles;Morocco;Vault;2008-05-30
+Nuance;Haiti;Vault;1990-06-07
+Oldman;Italy;Balance Beam;1991-08-12
+Pohorelice;Holland;Balance Beam;1980-04-12
+Quatrain;Korea;Balance Beam;1997-10-10
+Rancid;Italy;Balance Beam;1998-05-10
+Silly;Monaco;Balance Beam;1980-04-12
+Turnip;Belarus;Balance Beam;1997-10-10
+Ulrich;China;Balance Beam;1991-02-03
+Vance;Thailand;Balance Beam;1990-05-05
+Wally;Vietnam;Balance Beam;1991-06-05
+Xanadar;Malta;Balance Beam;1992-01-05
+Yola;Monaco;Balance Beam;1990-05-05
+Zulu;Egypt;Uneven Bars;1991-06-05
+Archie;Jordan;Uneven Bars;1992-01-05
+Barney;Turkey;Uneven Bars;1992-01-05
+Cid;Ukraine;Uneven Bars;2000-01-01
+Dovie;Thailand;Uneven Bars;2001-02-01
+Euler;Vietnam;Uneven Bars;2000-10-20
+Fran;Malta;Uneven Bars;2008-05-30
+Georgie;Monaco;Uneven Bars;1990-06-07
+Holly;Belarus;Uneven Bars;1991-08-12
+Itasca;China;Uneven Bars;1980-04-12
+Jeremy;Thailand;Uneven Bars;1991-08-12
