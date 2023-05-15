@@ -23,11 +23,11 @@ public class CompetitionTest {
         unevenBars = new GymnastEvent("Uneven Bars", Gender.FEMALE);
         dressage = new EquestrianEvent("Dressage", Gender.ANY);
 
-        OlympicInformation.eventList = new ArrayList<>();
-        OlympicInformation.eventList.add(allAround);
-        OlympicInformation.eventList.add(pommelHorse);
-        OlympicInformation.eventList.add(unevenBars);
-        OlympicInformation.eventList.add(dressage);
+        OlympicInformation.eventsArray = new Event[4];
+        OlympicInformation.eventsArray[0] = allAround;
+        OlympicInformation.eventsArray[1] = pommelHorse;
+        OlympicInformation.eventsArray[2] = unevenBars;
+        OlympicInformation.eventsArray[3] = dressage;
 
         allAroundJudge1 = new Judge("Alice", "Afghanistan", allAround, LocalDate.parse("2024-01-10"));
         allAroundJudge2 = new Judge("Bob", "Bhutan", allAround, LocalDate.parse("2024-01-10"));
@@ -43,36 +43,36 @@ public class CompetitionTest {
         dressageJudge4 = new Judge("Dan", "Denmark", dressage, LocalDate.parse("2023-05-11"));
         dressageJudge5 = new Judge("Ed", "Afghanistan", dressage, LocalDate.parse("2023-05-11"));
 
-        OlympicInformation.judgeList = new ArrayList<>();
-        OlympicInformation.judgeList.add(allAroundJudge1);
-        OlympicInformation.judgeList.add(allAroundJudge2);
-        OlympicInformation.judgeList.add(allAroundJudge3);
-        OlympicInformation.judgeList.add(allAroundJudge4);
-        OlympicInformation.judgeList.add(allAroundJudge5);
-        OlympicInformation.judgeList.add(allAroundJudge6);
-        OlympicInformation.judgeList.add(allAroundJudge7);
-        OlympicInformation.judgeList.add(dressageJudge1);
-        OlympicInformation.judgeList.add(dressageJudge2);
-        OlympicInformation.judgeList.add(dressageJudge3);
-        OlympicInformation.judgeList.add(dressageJudge4);
-        OlympicInformation.judgeList.add(dressageJudge5);
+        OlympicInformation.judgesReversed  = new ArrayList<>();
+        OlympicInformation.judgesReversed.add(allAroundJudge1);
+        OlympicInformation.judgesReversed.add(allAroundJudge2);
+        OlympicInformation.judgesReversed.add(allAroundJudge3);
+        OlympicInformation.judgesReversed.add(allAroundJudge4);
+        OlympicInformation.judgesReversed.add(allAroundJudge5);
+        OlympicInformation.judgesReversed.add(allAroundJudge6);
+        OlympicInformation.judgesReversed.add(allAroundJudge7);
+        OlympicInformation.judgesReversed.add(dressageJudge1);
+        OlympicInformation.judgesReversed.add(dressageJudge2);
+        OlympicInformation.judgesReversed.add(dressageJudge3);
+        OlympicInformation.judgesReversed.add(dressageJudge4);
+        OlympicInformation.judgesReversed.add(dressageJudge5);
 
-        competitionDressageQualifier = new Competition(dressage, LocalDate.parse("2023-08-10"), OlympicInformation.judgeList.stream().filter(o -> o.canJudge(dressage)).toList(),
+        competitionDressageQualifier = new Competition(dressage, LocalDate.parse("2023-08-10"), OlympicInformation.judgesReversed.stream().filter(o -> o.canJudge(dressage)).toList(),
                 CompetitionLevel.QUALIFIER);
-        competitionDressageQuarterFinal = new Competition(dressage, LocalDate.parse("2023-08-11"), OlympicInformation.judgeList.stream().filter(o -> o.canJudge(dressage)).toList(),
+        competitionDressageQuarterFinal = new Competition(dressage, LocalDate.parse("2023-08-11"), OlympicInformation.judgesReversed.stream().filter(o -> o.canJudge(dressage)).toList(),
                 CompetitionLevel.QUARTER_FINAL);
-        competitionDressageSemiFinal = new Competition(dressage, LocalDate.parse("2023-08-11"), OlympicInformation.judgeList.stream().filter(o -> o.canJudge(dressage)).toList(),
+        competitionDressageSemiFinal = new Competition(dressage, LocalDate.parse("2023-08-11"), OlympicInformation.judgesReversed.stream().filter(o -> o.canJudge(dressage)).toList(),
                 CompetitionLevel.SEMI_FINAL);
-        competitionDressageFinal = new Competition(dressage, LocalDate.parse("2023-08-12"), OlympicInformation.judgeList.stream().filter(o -> o.canJudge(dressage)).toList(),
+        competitionDressageFinal = new Competition(dressage, LocalDate.parse("2023-08-12"), OlympicInformation.judgesReversed.stream().filter(o -> o.canJudge(dressage)).toList(),
                 CompetitionLevel.FINAL);
 
-        competitionAllAroundQualifier = new Competition(allAround, LocalDate.parse("2023-08-11"), OlympicInformation.judgeList.stream().filter( o -> o.canJudge(allAround)).toList(),
+        competitionAllAroundQualifier = new Competition(allAround, LocalDate.parse("2023-08-11"), OlympicInformation.judgesReversed.stream().filter( o -> o.canJudge(allAround)).toList(),
                 CompetitionLevel.QUALIFIER);
-        competitionAllAroundQuarterFinal = new Competition(allAround, LocalDate.parse("2023-08-11"), OlympicInformation.judgeList.stream().filter( o -> o.canJudge(allAround)).toList(),
+        competitionAllAroundQuarterFinal = new Competition(allAround, LocalDate.parse("2023-08-11"), OlympicInformation.judgesReversed.stream().filter( o -> o.canJudge(allAround)).toList(),
                 CompetitionLevel.QUARTER_FINAL);
-        competitionAllAroundSemifinal = new Competition(allAround, LocalDate.parse("2023-08-12"), OlympicInformation.judgeList.stream().filter( o -> o.canJudge(allAround)).toList(),
+        competitionAllAroundSemifinal = new Competition(allAround, LocalDate.parse("2023-08-12"), OlympicInformation.judgesReversed.stream().filter( o -> o.canJudge(allAround)).toList(),
                 CompetitionLevel.SEMI_FINAL);
-        competitionAllAroundFinal = new Competition(allAround, LocalDate.parse("2023-08-13"), OlympicInformation.judgeList.stream().filter( o -> o.canJudge(allAround)).toList(),
+        competitionAllAroundFinal = new Competition(allAround, LocalDate.parse("2023-08-13"), OlympicInformation.judgesReversed.stream().filter( o -> o.canJudge(allAround)).toList(),
                 CompetitionLevel.FINAL);
     }
 
@@ -82,7 +82,7 @@ public class CompetitionTest {
         // try two correct ones
         String dressageQualString = "Dressage;QUALIFIER;2024-01-10;Alice,Bob,Cid,Dan,Ed";
         try {
-            Competition c1 = Competition.parseCompetition(dressageQualString);
+            Competition c1 = Competition.buildCompetition(dressageQualString);
             assertEquals(dressage, c1.getEvent());
             assertEquals(CompetitionLevel.QUALIFIER, c1.getCompetitionLevel());
             assertEquals(LocalDate.of(2024, 01, 10), c1.getCompetitionDate());
@@ -99,7 +99,7 @@ public class CompetitionTest {
 
         String allAroundFinalString = "All Around;FINAL;2024-01-10;Alice,Bob,Cid,Dan,Ed,Fran,Greg";
         try {
-            Competition c2 = Competition.parseCompetition(allAroundFinalString);
+            Competition c2 = Competition.buildCompetition(allAroundFinalString);
             assertEquals(allAround, c2.getEvent());
             assertEquals(LocalDate.of(2024, 01, 10), c2.getCompetitionDate());
             assertEquals(CompetitionLevel.FINAL, c2.getCompetitionLevel());
@@ -119,7 +119,7 @@ public class CompetitionTest {
         // competition with missing field
         String competitionMissingField = "Dressage;QUALIFIER;Alice,Bob,Cid,Dan,Ed";
         try {
-            Competition c3 = Competition.parseCompetition(competitionMissingField);
+            Competition c3 = Competition.buildCompetition(competitionMissingField);
             assertTrue(false); // this should not happen
         } catch (OlympicException e) {
             assertTrue(e instanceof OlympicException);
@@ -128,7 +128,7 @@ public class CompetitionTest {
         // competition with extra field
         String competitionExtraField = "Dressage;QUALIFIER;2023-01-01;2024-07-09;Alice,Bob,Cid,Dan,Ed";
         try {
-            Competition c3 = Competition.parseCompetition(competitionExtraField);
+            Competition c3 = Competition.buildCompetition(competitionExtraField);
             assertTrue(false); // this should not happen
         } catch (OlympicException e) {
             assertTrue(e instanceof OlympicException);
@@ -137,7 +137,7 @@ public class CompetitionTest {
         // competition with event that is not found in the list of events
         String notFoundEvent = "Zulu;FINAL;2024-01-10;Alice,Bob,Cid,Dan,Ed,Fran,Greg";
         try {
-            Competition c4 = Competition.parseCompetition(notFoundEvent);
+            Competition c4 = Competition.buildCompetition(notFoundEvent);
             assertTrue(false); // this should not happen
         } catch (OlympicException e) {
             assertTrue(e instanceof OlympicException);
@@ -146,7 +146,7 @@ public class CompetitionTest {
         // competition with an invalid level
         String invalidLevel = "Dressage;TRYOUT;2024-01-10;Alice,Bob,Cid,Dan,Ed,Fran,Greg";
         try {
-            Competition c4 = Competition.parseCompetition(invalidLevel);
+            Competition c4 = Competition.buildCompetition(invalidLevel);
             assertTrue(false); // this should not happen
         } catch (OlympicException e) {
             assertTrue(e instanceof OlympicException);
@@ -155,7 +155,7 @@ public class CompetitionTest {
         // competition without sufficient judges for it (parameters not enough)
         String competitionWithNoJudges = "Pommel Horse;FINAL;2024-01-10;Alice,Bob,Cid,Dan,Ed,Fran,Greg";
         try {
-            Competition c5 = Competition.parseCompetition(competitionWithNoJudges);
+            Competition c5 = Competition.buildCompetition(competitionWithNoJudges);
             assertTrue(false); // this should not happen
         } catch (OlympicException e) {
             assertTrue(e instanceof OlympicException);
@@ -164,7 +164,7 @@ public class CompetitionTest {
         // competition where only a few judges in the list can judge it
         String competitionWithSomeWrongJudges = "Dressage;FINAL;2024-01-10;Alice,Bob,Cid,Dan,Greg";
         try {
-            Competition c6 = Competition.parseCompetition(competitionWithSomeWrongJudges);
+            Competition c6 = Competition.buildCompetition(competitionWithSomeWrongJudges);
             assertTrue(false); // this should not happen
         } catch (OlympicException e) {
             assertTrue(e instanceof OlympicException);
@@ -243,5 +243,25 @@ public class CompetitionTest {
         // check for equal dates, equal level, then competition name
         assertTrue(competitionDressageQuarterFinal.compareTo(competitionAllAroundQuarterFinal) > 0);
         assertTrue(competitionAllAroundQuarterFinal.compareTo(competitionDressageQuarterFinal) < 0);
+    }
+
+    @Test
+    public void testEquals() {
+        assertNotEquals(competitionDressageQualifier, competitionDressageFinal);
+        assertEquals(competitionDressageQualifier, competitionDressageQualifier);
+
+        try {
+            Competition clone = new Competition(competitionDressageQualifier.getEvent(), competitionDressageQualifier.getCompetitionDate(),
+                    competitionDressageQualifier.getJudges(), competitionDressageQualifier.getCompetitionLevel());
+
+            assertEquals(clone, competitionDressageQualifier);
+
+            clone = new Competition(competitionDressageQualifier.getEvent(), competitionDressageQualifier.getCompetitionDate(),
+                    competitionDressageQualifier.getJudges(), CompetitionLevel.QUARTER_FINAL);
+            assertNotEquals(clone, competitionDressageQualifier);
+
+        } catch (OlympicException e) {
+            assert false; // this shouldn't happen
+        }
     }
 }

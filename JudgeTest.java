@@ -22,11 +22,12 @@ public class JudgeTest {
         allAround = new GymnastEvent("All Around", Gender.ANY);
         pommelHorse = new GymnastEvent("Pommel Horse", Gender.MALE);
         unevenBars = new GymnastEvent("Uneven Bars", Gender.FEMALE);
+        dressage =  new EquestrianEvent("Dressage", Gender.ANY);
 
-        OlympicInformation.eventList = new ArrayList<>();
-        OlympicInformation.eventList.add(allAround);
-        OlympicInformation.eventList.add(pommelHorse);
-        OlympicInformation.eventList.add(unevenBars);
+        OlympicInformation.eventsArray = new Event[3];
+        OlympicInformation.eventsArray[0] = allAround;
+        OlympicInformation.eventsArray[1] = pommelHorse;
+        OlympicInformation.eventsArray[2] = unevenBars;
         allAroundJudge1 = new Judge("Alice", "Afghanistan", allAround, LocalDate.parse("2024-01-10"));
         allAroundJudge2 = new Judge("Bob", "Bhutan", allAround, LocalDate.parse("2024-01-10"));
         pommelHorseJudge1 = new Judge("Cid", "China", pommelHorse, LocalDate.parse("2023-05-10"));
@@ -195,12 +196,22 @@ public class JudgeTest {
         assertEquals(0, allAroundJudge1.compareTo(aliceClone));
         assertEquals(0, allAroundJudge1.compareTo(allAroundJudge1));
 
-        // check when country is different
+        // check when name and birthday are the same, but country is different
         aliceClone.setNation("Argentina");
-        assertEquals(0, allAroundJudge1.compareTo(aliceClone));
+        assertTrue(allAroundJudge1.compareTo(aliceClone) < 0);
 
-        // check when event is different
+        // check when name, birthday, country the same, but event is different
         aliceClone = new Judge("Alice", "Afghhanistan", pommelHorse, allAroundJudge1.getBirthdate());
-        assertEquals(0, allAroundJudge1.compareTo(aliceClone));
+        assertTrue(allAroundJudge1.compareTo(aliceClone) < 0);
+    }
+
+    @Test
+    public void testEquals() {
+        assertFalse(allAroundJudge1.equals(dressageJudge1));
+        assertFalse(allAroundJudge2.equals(allAroundJudge1));
+
+        // compare two identical ones
+        var aliceClone = new Judge("Alice", "Afghanistan", allAround, allAroundJudge1.getBirthdate());
+        assertTrue(aliceClone.equals(allAroundJudge1));
     }
 }

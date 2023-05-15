@@ -1,8 +1,4 @@
-import com.sun.source.tree.Tree;
-
-import java.io.*;
-import java.time.LocalDate;
-import java.util.*;
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException, OlympicException {
