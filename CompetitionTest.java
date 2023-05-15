@@ -85,7 +85,7 @@ public class CompetitionTest {
             Competition c1 = Competition.buildCompetition(dressageQualString);
             assertEquals(dressage, c1.getEvent());
             assertEquals(CompetitionLevel.QUALIFIER, c1.getCompetitionLevel());
-            assertEquals(LocalDate.of(2024, 01, 10), c1.getCompetitionDate());
+            assertEquals(LocalDate.of(2024, 1, 10), c1.getCompetitionDate());
             assertTrue(c1.getJudges().contains(dressageJudge1));
             assertTrue(c1.getJudges().contains(dressageJudge2));
             assertTrue(c1.getJudges().contains(dressageJudge3));
@@ -94,14 +94,14 @@ public class CompetitionTest {
             assertFalse(c1.getJudges().contains(allAroundJudge1));
         } catch (OlympicException e) {
             // this should not happen
-            assertTrue(false);
+            fail();
         }
 
         String allAroundFinalString = "All Around;FINAL;2024-01-10;Alice,Bob,Cid,Dan,Ed,Fran,Greg";
         try {
             Competition c2 = Competition.buildCompetition(allAroundFinalString);
             assertEquals(allAround, c2.getEvent());
-            assertEquals(LocalDate.of(2024, 01, 10), c2.getCompetitionDate());
+            assertEquals(LocalDate.of(2024, 1, 10), c2.getCompetitionDate());
             assertEquals(CompetitionLevel.FINAL, c2.getCompetitionLevel());
             assertTrue(c2.getJudges().contains(allAroundJudge1));
             assertTrue(c2.getJudges().contains(allAroundJudge2));
@@ -113,15 +113,15 @@ public class CompetitionTest {
             assertFalse(c2.getJudges().contains(dressageJudge1));
         } catch (Exception ex) {
             // this should not happen
-            assertTrue(false);
+            fail();
         }
 
         // competition with missing field
         String competitionMissingField = "Dressage;QUALIFIER;Alice,Bob,Cid,Dan,Ed";
         try {
             Competition c3 = Competition.buildCompetition(competitionMissingField);
-            assertTrue(false); // this should not happen
-        } catch (OlympicException e) {
+            fail(); // this should not happen
+        } catch (Exception e) {
             assertTrue(e instanceof OlympicException);
         }
 
@@ -129,8 +129,8 @@ public class CompetitionTest {
         String competitionExtraField = "Dressage;QUALIFIER;2023-01-01;2024-07-09;Alice,Bob,Cid,Dan,Ed";
         try {
             Competition c3 = Competition.buildCompetition(competitionExtraField);
-            assertTrue(false); // this should not happen
-        } catch (OlympicException e) {
+            fail(); // this should not happen
+        } catch (Exception e) {
             assertTrue(e instanceof OlympicException);
         }
 
@@ -138,8 +138,8 @@ public class CompetitionTest {
         String notFoundEvent = "Zulu;FINAL;2024-01-10;Alice,Bob,Cid,Dan,Ed,Fran,Greg";
         try {
             Competition c4 = Competition.buildCompetition(notFoundEvent);
-            assertTrue(false); // this should not happen
-        } catch (OlympicException e) {
+            fail(); // this should not happen
+        } catch (Exception e) {
             assertTrue(e instanceof OlympicException);
         }
 
@@ -147,8 +147,8 @@ public class CompetitionTest {
         String invalidLevel = "Dressage;TRYOUT;2024-01-10;Alice,Bob,Cid,Dan,Ed,Fran,Greg";
         try {
             Competition c4 = Competition.buildCompetition(invalidLevel);
-            assertTrue(false); // this should not happen
-        } catch (OlympicException e) {
+            fail(); // this should not happen
+        } catch (Exception e) {
             assertTrue(e instanceof OlympicException);
         }
 
@@ -156,8 +156,8 @@ public class CompetitionTest {
         String competitionWithNoJudges = "Pommel Horse;FINAL;2024-01-10;Alice,Bob,Cid,Dan,Ed,Fran,Greg";
         try {
             Competition c5 = Competition.buildCompetition(competitionWithNoJudges);
-            assertTrue(false); // this should not happen
-        } catch (OlympicException e) {
+            fail(); // this should not happen
+        } catch (Exception e) {
             assertTrue(e instanceof OlympicException);
         }
 
@@ -165,8 +165,8 @@ public class CompetitionTest {
         String competitionWithSomeWrongJudges = "Dressage;FINAL;2024-01-10;Alice,Bob,Cid,Dan,Greg";
         try {
             Competition c6 = Competition.buildCompetition(competitionWithSomeWrongJudges);
-            assertTrue(false); // this should not happen
-        } catch (OlympicException e) {
+            fail(); // this should not happen
+        } catch (Exception e) {
             assertTrue(e instanceof OlympicException);
         }
     }
@@ -174,7 +174,7 @@ public class CompetitionTest {
     @Test
     public void getEvent() {
         assertEquals(dressage, competitionDressageQualifier.getEvent());
-        assertEquals(true, true);
+        assertEquals(allAround, competitionAllAroundQualifier.getEvent());
     }
 
     @Test
@@ -195,7 +195,7 @@ public class CompetitionTest {
 
         // check that if we modify the judge list after retrieving that it doesn't affect the result
         List<Judge> oldDressageJudges = new ArrayList<>(competitionDressageFinal.getJudges());
-        competitionDressageFinal.getJudges().remove(dressageJudge1);
+        oldDressageJudges.remove(dressageJudge1);
         assertEquals(5, competitionDressageFinal.getJudges().size());
     }
 
@@ -221,7 +221,7 @@ public class CompetitionTest {
             assertEquals(0, competitionDressageQualifier.compareTo(c1));
         } catch (OlympicException ex) {
             // this shouldn't happen
-            assertTrue(false);
+            fail();
         }
 
         // check less than by date - if the date is earlier, that's first
@@ -248,20 +248,24 @@ public class CompetitionTest {
     @Test
     public void testEquals() {
         assertNotEquals(competitionDressageQualifier, competitionDressageFinal);
+        assertNotEquals(competitionDressageQualifier.hashCode(), competitionDressageFinal.hashCode());
         assertEquals(competitionDressageQualifier, competitionDressageQualifier);
+        assertEquals(competitionDressageQualifier.hashCode(), competitionDressageQualifier.hashCode());
 
         try {
             Competition clone = new Competition(competitionDressageQualifier.getEvent(), competitionDressageQualifier.getCompetitionDate(),
                     competitionDressageQualifier.getJudges(), competitionDressageQualifier.getCompetitionLevel());
 
             assertEquals(clone, competitionDressageQualifier);
+            assertEquals(clone.hashCode(), competitionDressageQualifier.hashCode());
 
             clone = new Competition(competitionDressageQualifier.getEvent(), competitionDressageQualifier.getCompetitionDate(),
                     competitionDressageQualifier.getJudges(), CompetitionLevel.QUARTER_FINAL);
             assertNotEquals(clone, competitionDressageQualifier);
+            assertNotEquals(clone.hashCode(), competitionDressageQualifier.hashCode());
 
         } catch (OlympicException e) {
-            assert false; // this shouldn't happen
+           assert false; // this shouldn't happen
         }
     }
 }

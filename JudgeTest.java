@@ -2,7 +2,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
@@ -16,7 +15,7 @@ public class JudgeTest {
     EquestrianEvent dressage;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
 
         // get some events so we can use them
         allAround = new GymnastEvent("All Around", Gender.ANY);
@@ -53,7 +52,7 @@ public class JudgeTest {
             assertEquals("Hank", j1.getJudgeName());
             assertEquals("Italy", j1.getNation());
             assertEquals("All Around", j1.getEvent().getEventName());
-            assertEquals(LocalDate.of(2000, 01, 03), j1.getBirthdate());
+            assertEquals(LocalDate.of(2000, 1, 3), j1.getBirthdate());
         } catch (Exception ex) {
             // this should not happen
             assert false;
@@ -87,7 +86,7 @@ public class JudgeTest {
             var j1 = Judge.buildJudge(tooManyParameters);
             // this should fail
             assert false;
-        } catch (OlympicException e) {
+        } catch (Exception e) {
             assertTrue(e instanceof OlympicException);
         }
 
@@ -97,7 +96,7 @@ public class JudgeTest {
             var j1 = Judge.buildJudge(missingParameters);
             // this should fail
             assert false;
-        } catch (OlympicException e) {
+        } catch (Exception e) {
             assertTrue(e instanceof OlympicException);
         }
 
@@ -107,7 +106,7 @@ public class JudgeTest {
             var j1 = Judge.buildJudge(invalidDate);
             // this should fail
             assert false;
-        } catch (OlympicException e) {
+        } catch (Exception e) {
             assertTrue(e instanceof OlympicException);
         }
     }
@@ -159,8 +158,8 @@ public class JudgeTest {
 
     @Test
     public void getBirthdate() {
-        assertEquals(LocalDate.of(2024, 01, 10), allAroundJudge1.getBirthdate());
-        assertEquals(LocalDate.of(2023, 05 ,11), unevenBarsJudge1.getBirthdate());
+        assertEquals(LocalDate.of(2024, 1, 10), allAroundJudge1.getBirthdate());
+        assertEquals(LocalDate.of(2023, 5 ,11), unevenBarsJudge1.getBirthdate());
     }
 
     @Test
@@ -169,7 +168,7 @@ public class JudgeTest {
         allAroundJudge1.setBirthdate(LocalDate.parse("2023-12-25"));
         assertEquals(LocalDate.of(2023, 12, 25), allAroundJudge1.getBirthdate());
         allAroundJudge1.setBirthdate(aliceOldBirthdate);
-        assertEquals(LocalDate.of(2024, 01, 10), allAroundJudge1.getBirthdate());
+        assertEquals(LocalDate.of(2024, 1, 10), allAroundJudge1.getBirthdate());
         assertNotEquals(LocalDate.of(2023, 12, 25), allAroundJudge1.getBirthdate());
     }
 
@@ -201,17 +200,21 @@ public class JudgeTest {
         assertTrue(allAroundJudge1.compareTo(aliceClone) < 0);
 
         // check when name, birthday, country the same, but event is different
-        aliceClone = new Judge("Alice", "Afghhanistan", pommelHorse, allAroundJudge1.getBirthdate());
+        aliceClone = new Judge("Alice", "Afghanistan", pommelHorse, allAroundJudge1.getBirthdate());
         assertTrue(allAroundJudge1.compareTo(aliceClone) < 0);
     }
 
     @Test
     public void testEquals() {
-        assertFalse(allAroundJudge1.equals(dressageJudge1));
-        assertFalse(allAroundJudge2.equals(allAroundJudge1));
+        assertNotEquals(allAroundJudge1, dressageJudge1);
+        assertNotEquals(allAroundJudge1.hashCode(), dressageJudge1.hashCode());
+
+        assertNotEquals(allAroundJudge2, allAroundJudge1);
+        assertNotEquals(allAroundJudge2.hashCode(), allAroundJudge1.hashCode());
 
         // compare two identical ones
         var aliceClone = new Judge("Alice", "Afghanistan", allAround, allAroundJudge1.getBirthdate());
-        assertTrue(aliceClone.equals(allAroundJudge1));
+        assertEquals(aliceClone, allAroundJudge1);
+        assertEquals(aliceClone.hashCode(), allAroundJudge1.hashCode());
     }
 }

@@ -8,7 +8,7 @@ public class EquestrianEventTest {
     EquestrianEvent dressage, jumping, eventing;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         dressage = new EquestrianEvent("Dressage", Gender.ANY);
         jumping = new EquestrianEvent("Jumping", Gender.ANY);
         eventing = new EquestrianEvent("Eventing", Gender.ANY);
@@ -35,9 +35,9 @@ public class EquestrianEventTest {
             assert false;
         }
 
-        String invalidfirstCharacter = "H;Dressage;5;ANY";
+        String invalidFirstCharacter = "H;Dressage;5;ANY";
         try {
-            EquestrianEvent e3 = EquestrianEvent.buildEquestrianEvent(invalidfirstCharacter);
+            EquestrianEvent e3 = EquestrianEvent.buildEquestrianEvent(invalidFirstCharacter);
             // this should fail
             assert false;
         } catch (Exception ex)
@@ -86,9 +86,16 @@ public class EquestrianEventTest {
     @Test
     public void testEquals() {
         assertNotEquals(dressage, eventing);
+        assertNotEquals(dressage.hashCode(), eventing.hashCode());
+
         assertNotEquals(dressage, jumping);
+        assertNotEquals(dressage.hashCode(), jumping.hashCode());
+
         assertNotEquals(eventing, jumping);
+        assertNotEquals(eventing.hashCode(), jumping.hashCode());
+
         EquestrianEvent dressage2 = new EquestrianEvent("Dressage", Gender.ANY);
         assertEquals(dressage, dressage2);
+        assertEquals(dressage.hashCode(), dressage2.hashCode());
     }
 }
